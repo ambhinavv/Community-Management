@@ -1,0 +1,10 @@
+services:
+  tg-spam:
+    build: .
+    container_name: tg-spam-ts
+    restart: always
+    env_file: .env
+    environment:
+      - DATA_DIR=/app/data
+    volumes:
+      - ./data:/app/data

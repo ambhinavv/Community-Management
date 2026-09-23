@@ -1,0 +1,27 @@
+{
+  "name": "tg-spam-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Telegram anti-spam bot powered by Gemini",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./node_modules/tsx/dist/cli.mjs watch src/index.ts",
+    "start": "node start.mjs",
+    "build": "node ./node_modules/typescript/bin/tsc -p tsconfig.json",
+    "typecheck": "node ./node_modules/typescript/bin/tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.5.0",
+    "grammy": "^1.36.0",
+    "zod": "^3.25.28"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

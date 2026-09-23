@@ -1,0 +1,13 @@
+﻿node_modules/
+dist/
+.env
+data/approved-users.json
+data/*.db
+data/*.db-*
+data/*.txt
+data/*.loaded
+logs/
+bin/
+*.log
+.DS_Store
+Thumbs.db
